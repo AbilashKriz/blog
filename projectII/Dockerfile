@@ -13,7 +13,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy the current directory contents into the container at /usr/src/app
 COPY . .
 # Collect static files
-#RUN python manage.py collectstatic --noinput
+RUN python manage.py collectstatic --noinput
 
 # Make port 8000 available to the world outside this container
 EXPOSE 8000
