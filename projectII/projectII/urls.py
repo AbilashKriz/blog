@@ -25,6 +25,6 @@ urlpatterns = [
     path('research', views.research, name= 'research'),
     path('friends', views.friends, name='friends'),
     path('formpage', views.form_name_view, name='FormUsage'),
-    path('insta', views.instagram_posts_view, name='insta')
+    path('insta/<str:username>/', views.instagram_posts_view, name='insta')
 
 ]
