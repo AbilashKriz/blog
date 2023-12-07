@@ -24,7 +24,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('research', views.research, name= 'research'),
     path('friends', views.friends, name='friends'),
-    path('formpage', views.form_name_view, name='FormUsage')
+    path('formpage', views.form_name_view, name='FormUsage'),
     path('insta', views.instagram_posts_view, name='insta')
 
 ]
