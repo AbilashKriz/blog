@@ -79,4 +79,4 @@ def instagram_posts_view(request, username):
     # Create a list of image paths
     image_paths = [os.path.join(image_folder_path, image_file) for image_file in image_files]
 
-    return render(request, 'instagram_posts.html', {'image_paths': image_paths})
+    return render(request, 'instagram_post.html', {'image_paths': image_paths})
