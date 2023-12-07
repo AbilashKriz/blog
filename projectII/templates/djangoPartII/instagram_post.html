@@ -1,0 +1,16 @@
+<!-- instagram_posts.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Instagram Posts</title>
+</head>
+<body>
+    <h1>Instagram Posts</h1>
+    {% for image_path in image_paths %}
+        <div>
+            <img src="{{ image_path }}" alt="Instagram Post">
+        </div>
+    {% endfor %}
+</body>
+</html>
