@@ -28,3 +28,7 @@ urlpatterns = [
     path('insta/<str:username>/', views.instagram_posts_view, name='insta')
 
 ]
+
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
