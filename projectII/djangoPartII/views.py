@@ -77,6 +77,8 @@ def instagram_posts_view(request, username):
     image_files = [f for f in os.listdir(image_folder_path) if os.path.isfile(os.path.join(image_folder_path, f))]
 
     # Create a list of image paths
-    image_paths = [os.path.join(image_folder_path, image_file) for image_file in image_files]
+    # image_paths = [os.path.join(image_folder_path, image_file) for image_file in image_files]
+
+    image_paths = [f'/media/{image_file}' for image_file in image_files]
 
     return render(request, 'djangoPartII/instagram_post.html', {'image_paths': image_paths})
