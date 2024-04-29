@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_AbilashKriz_blog_1714399157565-pr-trigger-input-set
+  identifier: Build_AbilashKriz_blog_1714399157565prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_AbilashKriz_blog_1714399157565
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
