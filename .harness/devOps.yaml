@@ -34,3 +34,5 @@ pipeline:
                     repo: dockerabil/harness
                     tags:
                       - v1
+        delegateSelectors:
+          - docker-delegate
