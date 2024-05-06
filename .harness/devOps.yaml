@@ -35,4 +35,4 @@ pipeline:
                     tags:
                       - v1
         delegateSelectors:
-          - docker-delegate
+          - helm-delegate
